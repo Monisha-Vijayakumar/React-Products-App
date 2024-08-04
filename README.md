@@ -30,8 +30,7 @@ Steps to Set Up the Application:
 =================================
 
 1. Clone the Repository: 
-git clone https://github.com/your-username/product-dashboard.git
-cd product-dashboard
+git clone https://github.com/Monisha-Vijayakumar/React-Products-App.git
 
 2. Install Dependencies: 
 npm install
