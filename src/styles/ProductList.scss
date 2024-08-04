@@ -78,8 +78,15 @@ $message-banner-border-radius: 5px;
           td {
             flex: 1;
             border: 1px solid $table-border-color;
-
             text-align: left;
+          }
+          .input-error {
+            border: 1px solid red;
+          }
+          
+          .error-message {
+            color: red;
+            font-size: 0.8em;
           }
         }
       }
