@@ -84,6 +84,9 @@ Error Handling:
 ================
 The application includes error handling for API calls to ensure a smooth user experience. Appropriate messages are displayed for both success and error scenarios.
 
+Limitations/Known issues:
+=========================
+I have done only the basic CSS styling with responsive web design.
 
 
 
