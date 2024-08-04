@@ -1,0 +1,235 @@
+$primary-bg-color: #fff;
+$table-border-color: #ddd;
+$table-header-bg-color: darkgrey;
+$table-row-hover-bg-color: #f1f1f1;
+$table-row-alt-bg-color: #f9f9f9;
+$text-color: #333;
+$hover-color: #007bff;
+$padding: 8px;
+$margin: 20px;
+$mobile-breakpoint: 480px; // Mobile breakpoint
+$tablet-breakpoint: 768px; // Tablet breakpoint
+$laptop-breakpoint: 1024px; // Laptop breakpoint
+$desktop-breakpoint: 1200px; // Desktop breakpoint
+$success-banner-bg-color: #d4edda;
+$error-banner-bg-color: #f8d7da;
+$error-banner-text-color: #721c24;
+$success-banner-text-color: #155724;
+$message-banner-padding: 10px;
+$error-banner-border-color: #f5c6cb;
+$success-banner-border-color: #c3e6cb;
+$message-banner-border-radius: 5px;
+
+.product-list {
+  h2 {
+    text-align: center;
+    margin-bottom: $margin;
+  }
+
+  .table-container {
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: $margin;
+
+      thead {
+        display: flex;
+        flex-direction: column;
+        background-color: $table-header-bg-color;
+
+        th {
+          flex: 1;
+          border: 1px solid $table-border-color;
+          padding: $padding;
+          text-align: left;
+        }
+        .edit-row {
+          background-color: #f9f9f9;
+          input {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+          }
+        }
+      }
+
+      tbody {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        tr {
+          display: flex;
+          flex: 1;
+          border-bottom: 1px solid $table-border-color;
+
+          &:hover {
+            background-color: $table-row-hover-bg-color;
+          }
+
+          td {
+            flex: 1;
+            border: 1px solid $table-border-color;
+
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  .success-banner,
+  .error-banner {
+    width: 100%;
+    padding: $message-banner-padding;
+    margin-bottom: $message-banner-padding;
+    text-align: center;
+    border-radius: $message-banner-border-radius;
+  }
+  .success-banner {
+    background-color: $success-banner-bg-color;
+    color: $success-banner-text-color;
+    border: 1px solid $success-banner-border-color;
+  }
+  .error-banner {
+    background-color: $error-banner-bg-color;
+    color: $error-banner-text-color;
+    border: 1px solid $error-banner-border-color;
+  }
+
+  // Mobile styles (default)
+  @media (max-width: $mobile-breakpoint) {
+    .table-container {
+      display: flex;
+      table {
+        display: flex;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        display: flex;
+        border-bottom: 1px solid $table-border-color;
+      }
+
+      td {
+        border: none;
+        position: relative;
+        text-align: right;
+      }
+
+      .edit-row {
+        display: flex;
+        flex-direction: column;
+
+        td {
+          width: 100%;
+        }
+
+        input {
+          width: calc(100% - 10px);
+        }
+      }
+    }
+  }
+
+  // Tablet styles
+  @media (min-width: 481px) and (max-width: $tablet-breakpoint) {
+    .table-container {
+      // max-height: 90vh;
+      table {
+        flex-direction: column;
+      }
+
+      th,
+      td {
+        padding: 6px;
+      }
+
+      tr {
+        display: flex;
+      }
+      .edit-row {
+        display: flex;
+        flex-direction: row;
+
+        td {
+          width: 100%;
+        }
+
+        input {
+          width: calc(100% - 10px);
+        }
+      }
+    }
+  }
+
+  // Laptop styles
+  @media (min-width: 769px) and (max-width: $laptop-breakpoint) {
+    .table-container {
+      // max-height: 80vh;
+      table {
+        flex-direction: column;
+      }
+
+      th,
+      td {
+        padding: 10px;
+      }
+      tr {
+        display: flex;
+      }
+      .edit-row {
+        display: flex;
+        flex-direction: row;
+
+        td {
+          width: 100%;
+        }
+
+        input {
+          width: calc(100% - 10px);
+        }
+      }
+    }
+  }
+
+  // Desktop styles
+  @media (min-width: 1025px) {
+    .table-container {
+      // max-height: 85vh;
+      table {
+        flex-direction: column;
+      }
+
+      th,
+      td {
+        padding: 12px;
+      }
+      tr {
+        display: flex;
+      }
+      .edit-row {
+        display: flex;
+        flex-direction: row;
+
+        td {
+          width: 100%;
+        }
+
+        input {
+          width: calc(100% - 10px);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "title": "iPhone 5s-1",
+      "category": "smartphones",
+      "price": 199.99,
+      "brand": "Apple",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "title": "iPhone 6",
+      "category": "smartphones",
+      "price": 299.99,
+      "brand": "Apple"
+    },
+    {
+      "id": "3",
+      "title": "iPhone 13 Pro",
+      "category": "smartphones",
+      "price": 1099.99,
+      "brand": "Apple"
+    },
+    {
+      "id": "4",
+      "title": "iPhone X",
+      "category": "smartphones",
+      "price": 899.99,
+      "brand": "Apple"
+    },
+    {
+      "id": "5",
+      "title": "Oppo A57",
+      "category": "smartphones",
+      "price": 249.99,
+      "brand": "Oppo"
+    },
+    {
+      "id": "6",
+      "title": "Oppo F19 Pro Plus",
+      "category": "smartphones",
+      "price": 399.99,
+      "brand": "Oppo"
+    },
+    {
+      "title": "Samsung",
+      "category": "Smartphone",
+      "price": "223",
+      "brand": "Samsung",
+      "id": "6e19"
+    },
+    {
+      "title": "iphone 12",
+      "category": "Smartphones",
+      "price": "200",
+      "brand": "Apple",
+      "id": "7103"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+$primary-bg-color: #1E90FF;
+$primary-text-color: #fff;
+$header-height: 60px;
+$header-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$mobile-breakpoint: 768px;
+$tablet-breakpoint: 480px;
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+  z-index: 1000;
+  box-shadow: $header-shadow;
+}
+
+body {
+  padding-top: $header-height;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+  height: $header-height;
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .header-content {
+    justify-content: center;
+  }
+}
+
+@media (max-width: $tablet-breakpoint) {
+  
+}
+
