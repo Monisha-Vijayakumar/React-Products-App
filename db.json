@@ -41,20 +41,6 @@
       "category": "smartphones",
       "price": 399.99,
       "brand": "Oppo"
-    },
-    {
-      "title": "Samsung",
-      "category": "Smartphone",
-      "price": "223",
-      "brand": "Samsung",
-      "id": "6e19"
-    },
-    {
-      "title": "iphone 12",
-      "category": "Smartphones",
-      "price": "200",
-      "brand": "Apple",
-      "id": "7103"
     }
   ]
 }
