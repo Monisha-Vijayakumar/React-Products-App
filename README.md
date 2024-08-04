@@ -69,7 +69,7 @@ App.js: Main application component that renders the router and layout.
 
 Design Choices:
 ===============
-State Management: Utilizes React's built-in hooks (useState, useEffect) for managing component state and side effects.
+State Management: Utilizes React's built-in hooks (useState, useEffect) for managing component state and side effects. As this application has only 2 components and didn't require any data passing between them, so React Context or Redux has not been used.
 
 API Communication: Uses Axios for making API requests to the mock server.
 
